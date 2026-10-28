@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatima's Learning Space</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 25px;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #dbeafe, #ede9fe, #f8fafc);
+            color: #172554;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 850px;
+            padding: 65px 30px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.88);
+            border: 1px solid white;
+            border-radius: 28px;
+            box-shadow: 0 25px 70px rgba(59, 130, 246, 0.15);
+            animation: appear 0.8s ease;
+        }
+
+        .icon {
+            font-size: 85px;
+            margin-bottom: 25px;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 9px 17px;
+            margin-bottom: 20px;
+            border-radius: 50px;
+            background: #eff6ff;
+            color: #2563eb;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        h1 {
+            font-size: clamp(32px, 6vw, 54px);
+            margin-bottom: 20px;
+            letter-spacing: -1.5px;
+        }
+
+        h1 span {
+            color: #4f46e5;
+        }
+
+        p {
+            max-width: 500px;
+            margin: 0 auto 35px;
+            color: #64748b;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 18px 32px;
+            border-radius: 14px;
+            background: linear-gradient(135deg, #2563eb, #4f46e5);
+            color: white;
+            font-size: 17px;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 0 10px 25px rgba(79, 70, 229, 0.25);
+            transition: 0.3s ease;
+        }
+
+        .button:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 30px rgba(79, 70, 229, 0.35);
+        }
+
+        .footer {
+            margin-top: 45px;
+            color: #94a3b8;
+            font-size: 13px;
+        }
+
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 45px 20px;
+            }
+
+            .icon {
+                font-size: 65px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            .button {
+                padding: 16px 23px;
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+
+        <div class="icon">🎓</div>
+
+        <div class="tag">YOUR LEARNING SPACE</div>
+
+        <h1>Welcome <span>FATIMA</span></h1>
+
+    
+
+        <a class="button"
+           href="https://www.google.com"
+           target="_blank"
+           rel="noopener noreferrer">
+            <span>📚</span>
+            <span>Explore My Lectures</span>
+            <span>→</span>
+        </a>
+
+        <div class="footer">
+            ✦ &nbsp; Learn at your own pace. Grow every day. &nbsp; ✦
+        </div>
+
+    </main>
+</body>
+</html>
